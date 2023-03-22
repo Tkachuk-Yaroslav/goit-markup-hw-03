@@ -307,14 +307,17 @@ body {
 }
 
 .team-list {
-
+    display: flex;
 }
 
 .team-list-item {
     background-color: var(--team-list-bg);
     /*background-color: #FFFFFF;*/
+    width: calc((100% - 72px) / 4);
 }
-
+.team-list-item + .team-list-item{
+    margin-left: 24px;
+}
 .team-list-subtitle {
     font-weight: 500;
     font-size: 20px;
@@ -340,6 +343,8 @@ body {
 .footer {
     background-color: var(--main-page-bg);
     /*background-color: #2E2F42;*/
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .footer-logo {
@@ -366,6 +371,7 @@ body {
     letter-spacing: 0.02em;
     color: var(--footer-text-color);
     /*color: #E7E9FC;*/
+    max-width: 264px;
 }
 
 /**-------------------------------portfolio----------------------------*/
