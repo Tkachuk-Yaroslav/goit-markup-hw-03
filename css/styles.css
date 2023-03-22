@@ -278,11 +278,15 @@ body {
 }
 
 .work-list {
-
+    display: flex;
 }
 
 .work-list-item {
+    width: calc((100% - 48px) / 3);
+}
 
+.work-list-item:not(:last-child) {
+    margin-right: 24px;
 }
 
 /**-------------------------------OUR TEAM----------------------------*/
