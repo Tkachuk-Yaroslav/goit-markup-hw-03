@@ -71,19 +71,25 @@ body {
 }
 
 .section {
-
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 
 
 /**-------------------------------HEADER----------------------------*/
 .header {
-padding-top: 24px;
-padding-bottom: 24px;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .header-navigation {
-
+    display: flex;
+    align-items: center;
 }
 
 .header-logo {
@@ -94,6 +100,7 @@ padding-bottom: 24px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--first-logo-part);
+    margin-right: 76px;
 }
 
 .part-of-logo {
@@ -102,7 +109,8 @@ padding-bottom: 24px;
 }
 
 .header-list {
-
+    display: flex;
+    gap: 40px;
 }
 
 .header-list-item {
@@ -119,6 +127,9 @@ padding-bottom: 24px;
     letter-spacing: 0.02em;
     color: var(--secondary-page-text);
     /*color: #2E2F42;*/
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .header-list-link:hover,
@@ -131,7 +142,10 @@ padding-bottom: 24px;
 }
 
 .address-list {
-
+    display: flex;
+    gap: 40px;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .address-list-item {
@@ -158,6 +172,8 @@ padding-bottom: 24px;
 .hero {
     background-color: var(--main-page-bg);
     /*background-color: #2E2F42;*/
+    padding-top: 188px;
+    padding-bottom: 188px;
 }
 
 .hero-title {
@@ -167,7 +183,12 @@ padding-bottom: 24px;
     text-align: center;
     letter-spacing: 0.02em;    
     color: var(--main-title-color);
+
     margin-bottom: 48px;
+    margin-bottom: 48px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 496px;
 }
 
 .hero-btn {
@@ -176,17 +197,22 @@ padding-bottom: 24px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
-    display: flex;
-    align-items: center;
     letter-spacing: 0.04em;
     color: var(--main-btn-color);
     /*color: #FFFFFF;*/
     background: var(--main-btn-bg);
     /*background: #4D5AE5;*/
     cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
     margin: 0 auto;
     border: 1px solid #4D5AE5;
     border-radius: 4px;
+    min-width: 169px;    
+    padding: 16px 32px;
 }
 .hero-btn:hover,
 .hero-btn:focus {
@@ -198,7 +224,7 @@ padding-bottom: 24px;
 
 
 .strategy {
-
+    padding-bottom: 0;
 }
 
 .strategy-title {
@@ -206,11 +232,15 @@ padding-bottom: 24px;
 }
 
 .strategy-list {
-
+    display: flex;
 }
 
 .strategy-list-item {
-
+    width: calc((100% - 72px) / 4);
+    margin-right: 24px;
+}
+.strategy-list-item:last-child {
+    margin-right: 0;
 }
 
 .strategy-list-subtitle {
