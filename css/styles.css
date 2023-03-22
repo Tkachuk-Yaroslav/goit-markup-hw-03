@@ -473,3 +473,7 @@ padding-top: 96px;
     color: var(--secondary-portfolio-color);
     /*color: #434455;*/
 }
+/*.portfolio-border {
+    border: 1px solid #E7E9FC;
+    border-top: none;
+}*/
